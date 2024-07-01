@@ -31,9 +31,8 @@
     width: 60vw;
 }
 
-.container__botao:checked ~ .lista-menu {
-    display: block;
-}
+.container__botao:checked ~ .<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
 
 .lista-menu__titulo,
 .lista-menu__item {
@@ -56,4 +55,28 @@
 
 .container__botao {
     display: none;
+}
+
+
+.container__titulo {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+   
+    .container__titulo, 
+    .container__titulo--negrito {
+    font-family: var(--fonte-secundario);
+    font-size: 30px;
+   }
+
+   .container__titulo {
+    font-weight: 400;
+    display: block;
+   }
+
+   .container__titulo--negrito {
+    font-weight: 700;
+   }
+
 }
